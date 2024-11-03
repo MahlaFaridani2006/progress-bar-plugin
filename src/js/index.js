@@ -3,6 +3,9 @@
 
 (function ($) {
     $.fn.progress = function (options) {
+        /* default values
+        default values will change when user post data to function
+        */
         let settings = $.extend({
             commenceNum: 0,
             endNum: 0,
@@ -10,6 +13,7 @@
             selector:'.progress div',
         }, options);
 
+        /*do operation section*/
         let progress = setInterval(function () {
             settings.commenceNum++;
             if (settings.commenceNum >= settings.endNum) {
@@ -21,6 +25,6 @@
     }
 
 }(jQuery));
-
+/*use plugin*/
 $('#first').progress({commenceNum: 0, endNum: 90,selector:'#first'});
 
