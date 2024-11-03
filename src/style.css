@@ -1,0 +1,12 @@
+.progress{
+    width: 500px;
+    height: 40px;
+    border: 1px solid green;
+}
+.progress div{
+    height:100% ;
+    width: 0%;
+    background-color: green;
+    line-height: 40px;
+    text-align: center;
+}
